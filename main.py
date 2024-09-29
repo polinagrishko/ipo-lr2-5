@@ -1,14 +1,14 @@
-def time_from_minutes(n):
-    minutes_in_day = 24 * 60
+def time(n):
+    min = 24 * 60
     
-    n = n % minutes_in_day
+    n = n % min
     
     hours = n // 60
-    minutes = n % 60
+    min = n % 60
     
-    return hours, minutes
+    return hours, min
 
 n = int(input("Введите количество минут с начала суток: "))
 
-hours, minutes = time_from_minutes(n)
-print(f"Часы: {hours}, Минуты: {minutes}")
+hours, minutes = time(n)
+print(f"Часы: {hours}, Минуты: {min}")
